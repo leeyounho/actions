@@ -1,0 +1,12 @@
+name: Publish Extension
+on:
+  workflow_dispatch:
+    inputs:
+      preRelease:
+        type: boolean
+        required: true
+        default: false
+      continueOnTagErr:
+        type: boolean
+        required: false
+        default: false
